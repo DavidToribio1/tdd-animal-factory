@@ -33,6 +33,27 @@ public class AnimalFactoryTest {
         Assert.assertEquals(expectedName, actualName);
         Assert.assertEquals(expectedBirthDate, actualBirthDate);
     }
+    @Test
+    public void createCatTest() {
+        // given (there is a dog name)
+        String expectedName = "gilbert";
+
+        // given (there is a dog birthdate)
+        Date expectedBirthDate = new Date();
+
+        // when a dog is created with those fields
+        Cat cat = AnimalFactory.createCat(expectedName, expectedBirthDate);
+
+        // when we get the name of the dog
+        String actualName = cat.getName();
+
+        // when we get birthdate of the dog
+        Date actualBirthDate = cat.getBirthDate();
+
+        // then
+        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(expectedBirthDate, actualBirthDate);
+    }
 
     //TODO - Create Test for `Animal createCat(String name, Date birthDate)`
 }
