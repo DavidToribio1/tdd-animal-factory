@@ -29,22 +29,24 @@ public abstract class Mammal implements Animal {
         this.name = name;
     }
 
-    public Date getBirthDate() {
+    public  Date getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public static void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
 
-    public Integer getNumberOfMealsEaten() {
+    public static Integer getNumberOfMealsEaten() {
         return eatenMeals.size();
     }
 
-    public void eat(Food food) {
-        eatenMeals.add(food);
+    public void eat(Food food){
+        eatenMeals.add(Food);
     }
+
+
 
     @Override
     public Integer getId() {

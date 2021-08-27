@@ -79,6 +79,9 @@ public class CatTest {
         Assert.assertEquals(expected, actual);
     }
 
+
+
+
     // TODO - Create test to check Animal inheritance; google search `java instanceof keyword`
     @Test
     public void implementTest() {
